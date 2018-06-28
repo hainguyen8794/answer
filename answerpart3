@@ -1,0 +1,45 @@
+1, What  is  the  best  environment  configuration  for  development  ?
+Môi trường tốt nhất cho phát triển là môi trường được cài đặt những module , package , tool hỗ trợ cho việc lập trình , sửa lỗi và code .
+Ví dụ : -Composer , H&O template h , debugbar , MGT deverlope toolbar .
+2,   Describe  role  and  purpose  of  each  part  in  a  Magento  module 
+Một module của magento2 thường bao gồm các phần như :
+- Block : Kết xuất ra từng phần của mỗi trang , gọi model và nhận dữ liệu và kết xuất nó đưa ra các template
+Các block bình thường thường tải bởi các layout XML
+- COntroller :định nghĩa các điều khiển của module , mỗi hành đọng là một class tách rời nhau
+- ETC định nghĩa các module config : cấu hình , menu , và đè lên các core class , 
+- Helper: Nơi chứa các hàm hỗ trợ trong xử lý dữ liệu 
+ví dụ như : định dạng ảnh vv...
+-i18n : Nơi đặt các hàm định nghĩa cho đa ngôn ngữ  trong magento2
+- Observers :là một loại class định nghĩa các hành vi , cách thực hiện của module. Các observers sẽ được thực hiện bất khi nào khi các event được cấu hình được trình quản lý event gửi đi
+-Model : Định nghĩa các kết nối với datatbase 
+-Setup : chứa các cài đặt của module
+-Test : nơi cài đặt các UNI test cho chính module đó
+-UI : nơi chứa các các giao diện của người dùng admin 
+- View : nơi chứa các giao diện của module nói chung
+- Cron : Nơi lập lịch cho module thực hiên 
+- Plugin :Nơi chứa các plugin được cài đặt vào trong module
+-CustomerData : nơi chứa các dữ liệu người dùng
+-registration.php:file định nghĩa đường dẫn của module
+3, Difference  between  extending  and  overriding  layout?  When  we  can't  use  extending  ?
+Khác nhau giữa extending và overriding layout là :
+- Extending là thừa kế, sử dụng lại những gì được thừa kế .
+- Overriding là định nghĩa lại những thứ được thừa kế , chèn thêm vào phần mình đã thừa kế
+4,What  is  the  chain  of  theme  fallback/overriding  in  Magento  2  
+
+5,  Where  to  look  at  when  the  page  is  blank  or  have  fatal  error  ?
+ -var/log/debug.log
+
+6,  Where  to  look  at  when  we  have  a  Magento  error  message?
+-PHP errors 
+- var/exception.log
+- var/system.log
+ var/ report
+7, 
+
+8, How  to  display  all  object  data  in  Magento  ?  Can  var_dump()  the  object  ?  
+
+ -Ta cũng có thể  in ra object bằng cách sau :
+print_r($object);
+- Không thể dùng vardump để thể hiện $object data như thế được
+
+
